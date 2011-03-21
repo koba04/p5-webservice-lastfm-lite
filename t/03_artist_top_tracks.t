@@ -2,9 +2,9 @@ use strict;
 use warnings;
 use Test::More;
 use Test::Exception;
-use Webservice::LastFM::Lite;
+use WebService::LastFM::Lite;
 
-my $lastfm = Webservice::LastFM::Lite->new('c18a961bca806e6d921780f53f4f9254');
+my $lastfm = WebService::LastFM::Lite->new('c18a961bca806e6d921780f53f4f9254');
 
 my $res = $lastfm->artist_top_tracks('Radiohead');
 

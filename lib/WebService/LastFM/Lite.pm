@@ -1,4 +1,4 @@
-package Webservice::LastFM::Lite;
+package WebService::LastFM::Lite;
 use strict;
 use warnings;
 use utf8;
@@ -101,16 +101,16 @@ __END__
 
 =head1 NAME
 
-Webservice::LastFM::Lite -
+WebService::LastFM::Lite -
 
 =head1 SYNOPSIS
 
-  my $lastfm = Webservice::LastFM::Lite->new('your api key');
+  my $lastfm = WebService::LastFM::Lite->new('your api key');
   $res = $lastfm->user_top_artists('user name', { limit => 10, page => 1});
 
 =head1 DESCRIPTION
 
-Webservice::LastFM::Lite is LastFM API Wrapper Module.
+WebService::LastFM::Lite is LastFM API Wrapper Module.
 Interface is Simple.
 
 =head1 METHODS

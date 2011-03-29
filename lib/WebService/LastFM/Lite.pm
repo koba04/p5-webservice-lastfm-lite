@@ -37,6 +37,15 @@ sub geo_top_artists {
     return $self->_make_response($response->{topartists}->{artist});
 }
 
+sub geo_top_tracks {
+    my ($self, $country, $opt) = @_;
+
+    my $method = 'geo.gettoptracks';
+    my $response = $self->_http_request($method, {country => $country }, $opt);
+
+    return $self->_make_response($response->{toptracks}->{track});
+}
+
 sub artist_top_tracks {
     my ($self, $artist, $opt) = @_;
 

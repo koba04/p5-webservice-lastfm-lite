@@ -1,7 +1,6 @@
 package WebService::LastFM::Lite;
 use strict;
 use warnings;
-use utf8;
 our $VERSION = '0.01';
 
 use Carp;
@@ -89,7 +88,6 @@ sub _http_request {
 
     $res->is_success or croak "http request error => [" . $uri->as_string . "]";
     my $res_json = $res->content;
-
     return decode_json($res_json);
 }
 
